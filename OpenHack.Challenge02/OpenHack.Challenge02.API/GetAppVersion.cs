@@ -5,6 +5,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using System;
 
 namespace OpenHack.Challenge02.API
 {
@@ -17,7 +18,7 @@ namespace OpenHack.Challenge02.API
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            return new OkObjectResult(new { version = "2.0.0.0" });
+            return new OkObjectResult(new { version = "2.0.0.0", timestamp = DateTime.Now.ToString() });
         }
     }
 }
