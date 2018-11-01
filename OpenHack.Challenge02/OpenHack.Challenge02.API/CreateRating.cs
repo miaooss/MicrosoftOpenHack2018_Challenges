@@ -56,7 +56,7 @@ namespace OpenHack.Challenge02.API
             rating.Rating = data?.rating;
 			rating.LocationName = data?.locationName;
             rating.Rating = data?.rating;
-            rating.Version = "1.2";
+            rating.Version = "1.3";
 
             var result = await Infrastructure.UserRatingManager.AddAsync(rating);
 
