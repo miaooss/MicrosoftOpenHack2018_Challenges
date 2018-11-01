@@ -1,13 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/proxies",
   "proxies": {
-    "CreateRating": {
-      "matchCondition": {
-        "methods": [ "POST" ],
-        "route": "CreateRating"
-      },
-      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
-    },
     "GetProduct": {
       "matchCondition": {
         "methods": [ "GET" ],
@@ -26,6 +19,27 @@
       "matchCondition": {
         "methods": [ "GET" ],
         "route": "GetAppVersion"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    },
+    "CreateRating": {
+      "matchCondition": {
+        "methods": [ "POST" ],
+        "route": "CreateRating"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    },
+    "GetRating": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "GetRating"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    },
+    "GetRatings": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "GetRatings"
       },
       "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
     }
