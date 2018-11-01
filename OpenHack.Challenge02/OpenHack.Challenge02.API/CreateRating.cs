@@ -65,7 +65,7 @@ namespace OpenHack.Challenge02.API
 
         public static async Task<Models.Product> GetProductId(Models.UserRating rating)
         {
-            HttpResponseMessage response = await CallApi("https://serverlessohproduct.trafficmanager.net/api/","GetProduct?productId=" + rating.ProductId);
+            HttpResponseMessage response = await CallApi("https://serverlessohproduct.trafficmanager.net/api/", "GetProduct?productId=" + rating.ProductId);
             if (response.IsSuccessStatusCode)
             {
                 Models.Product product = await response.Content.ReadAsAsync<Models.Product>();

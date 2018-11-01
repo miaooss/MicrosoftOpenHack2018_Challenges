@@ -8,6 +8,20 @@
       },
       "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
     },
+    "GetProduct": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "https://serverlessohproduct.trafficmanager.net/api/"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    },
+    "GetUser": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "https://serverlessohuser.trafficmanager.net/api/"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    },
     "GetAppVersion": {
       "matchCondition": {
         "methods": [ "GET" ],
