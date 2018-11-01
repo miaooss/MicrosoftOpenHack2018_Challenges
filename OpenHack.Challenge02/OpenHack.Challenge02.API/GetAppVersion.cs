@@ -18,7 +18,7 @@ namespace OpenHack.Challenge02.API
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            return new OkObjectResult(new { version = "2.0.0.0", timestamp = DateTime.Now.ToString() });
+            return new OkObjectResult(new { version = "2.1.0.0", timestamp = DateTime.Now.ToString() });
         }
     }
 }
