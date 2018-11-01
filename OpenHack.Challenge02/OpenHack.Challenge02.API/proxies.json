@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "CreateRating": {
+      "matchCondition": {
+        "methods": [ "POST" ],
+        "route": "CreateRating"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    },
+    "GetAppVersion": {
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "GetAppVersion"
+      },
+      "backendUri": "https://table08challenge03dev.azurewebsites.net/api/"
+    }
+  }
+}
