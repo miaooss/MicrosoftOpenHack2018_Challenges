@@ -1,0 +1,156 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Table08OpenHack",
+    "description" : "Table08OpenHack",
+    "version" : "0.1"
+  },
+  "servers" : [ {
+    "url" : "https://openhacktable08.azure-api.net"
+  } ],
+  "paths" : {
+    "/api/CreateRating" : {
+      "post" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n    \"userId\": \"cc20a6fb-a91f-4192-874d-132493685376\",\n    \"productId\": \"4c25613a-a3c2-4ef3-8e02-9c335eb23204\",\n    \"locationName\": \"Sample ice cream shop\",\n    \"rating\": 5,\n    \"userNotes\": \"I love the subtle notes of orange in this ice cream!\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        }
+      }
+    },
+    "/api/GetRating" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "ratingId",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "6c71365c-dd92-4014-83db-960a16345d35"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        }
+      }
+    },
+    "/api/GetUser" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "cc20a6fb-a91f-4192-874d-132493685376"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        }
+      }
+    },
+    "/api/GetProduct" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "productId",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "4c25613a-a3c2-4ef3-8e02-9c335eb23204"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        }
+      }
+    },
+    "/api/GetRatings" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "cc20a6fb-a91f-4192-874d-132493685376"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        }
+      }
+    },
+    "/api/GetProducts" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "locationName" : {
+            "type" : "string"
+          },
+          "productId" : {
+            "type" : "string"
+          },
+          "rating" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "userId" : {
+            "type" : "string"
+          },
+          "userNotes" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}
